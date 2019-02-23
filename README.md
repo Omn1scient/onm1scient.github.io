@@ -1,2 +1,2 @@
-# onm1scient.github.io
+# omn1scient.github.io
 HTML pages portfolio
