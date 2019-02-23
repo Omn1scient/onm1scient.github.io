@@ -1,0 +1,126 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+}
+
+* {
+  7outline: 1px solid red;
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+ul, h, li, p, fieldset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  min-height: 100px;
+  background-color: #333333;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header h1 {
+  width: 100%;
+  margin: 30px auto;
+  font-size: 60px;
+  text-align: center;
+}
+
+.projects {
+
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 550px;
+  overflow: hidden;
+  7background-color: #555555;
+}
+
+.project-item-link {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: -25px;
+}
+
+.project-item fieldset {
+  display: block;
+}
+
+.project-title-link {
+  display: block;
+  color: #ffffff;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(140, 140, 140, 0.3);
+}
+
+
+
+
+
+/* -----------PROJECTS------------- */
+
+
+.project-keksby {
+  display: block;
+  margin: 0 auto;
+  width: 170%;
+  margin-left: -140px; 
+}
+
+.project-nerds {
+  display: block;
+  margin: 0 auto;
+  width: 120%;
+  margin-left: -40px; 
+}
+
+.project-barbershop {
+  display: block;
+  margin: 0 auto;
+  width: 260%;
+  margin-left: -320px; 
+}
+
+
+/* -----------PROJECTS------------- */
+
+
+
+
+.container {
+  width: 1300px;
+  margin: 10px auto;
+}
+
+main {
+  margin-bottom: 100px;
+  padding: 30px;
+}
+
+footer {
+  min-height: 150px;
+  background-color: #333333;
+}
