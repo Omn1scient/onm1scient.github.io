@@ -723,3 +723,16 @@ body {
 .footer-copyright a:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.portfolio {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../arrow-back-black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}

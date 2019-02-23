@@ -49,9 +49,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 400px;
-  height: 550px;
+  height: 600px;
   overflow: hidden;
-  7background-color: #555555;
 }
 
 .project-item-link {
@@ -60,6 +59,12 @@ header {
   overflow-x: hidden;
   margin-right: -25px;
 }
+
+/* .project-item-info {
+  min-width: 200px;
+  background-color: red;
+  margin: 0 auto;
+} */
 
 .project-item fieldset {
   display: block;
@@ -78,8 +83,8 @@ header {
 
 
 
-
-
+/* -----------PROJECTS------------- */
+/* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 
 
@@ -106,8 +111,8 @@ header {
 
 
 /* -----------PROJECTS------------- */
-
-
+/* -----------PROJECTS------------- */
+/* -----------PROJECTS------------- */
 
 
 .container {

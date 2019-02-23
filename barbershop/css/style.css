@@ -1375,3 +1375,20 @@ input {
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
 }
+
+.portfolio {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../arrow-back-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.inner-page .portfolio {
+  background-image: url('../../arrow-back-black.png');
+}
