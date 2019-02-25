@@ -120,14 +120,20 @@ header {
   border-collapse: collapse;
 }
 
-.project-item td {
+.project-item td:first-child {
   vertical-align: top;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.description td {
+  padding-bottom: 5px;
 }
 
 .project-item:hover table {
   display: block;
   animation: hover 0.5s forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
 }
 
 @keyframes hover {
@@ -142,12 +148,9 @@ header {
   }
 }
 
-
-
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
-
 
 .project-keksby {
   display: block;
@@ -174,11 +177,9 @@ header {
   margin-left: -327px; 
 }
 
-
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
-
 
 main {
   margin-bottom: 10px;
