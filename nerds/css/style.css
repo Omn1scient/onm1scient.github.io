@@ -205,7 +205,6 @@ input[type="radio"].visually-hidden {
   min-width: 158px;
 }
 
-
 .slider input[type=radio] {
   position: absolute;
   bottom: 75px;
@@ -251,7 +250,15 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-.slider input[type=radio]:checked + label::before {
+.slider input[type=radio]:first-of-type:checked ~ .slider-1::before {
+  display: block;
+}
+
+.slider input[type=radio]:nth-of-type(2):checked ~ .slider-2::before {
+  display: block;
+}
+
+.slider input[type=radio]:nth-of-type(3):checked ~ .slider-3::before {
   display: block;
 }
 
@@ -276,6 +283,8 @@ input[type="radio"].visually-hidden {
   background-position: bottom bottom;
   transition: opacity 0.5s;
   opacity: 0;
+  animation: slider1 12s infinite;
+  
 }
 
 .slider-img-2 {
@@ -289,6 +298,8 @@ input[type="radio"].visually-hidden {
   background-position: center center;
   transition: opacity 0.5s;
   opacity: 0;
+  animation: slider2 12s infinite;
+  
 }
 
 .slider-img-3 {
@@ -302,6 +313,7 @@ input[type="radio"].visually-hidden {
   background-position: center center;
   transition: opacity 0.5s;
   opacity: 0;
+  animation: slider3 12s infinite;
 }
 
 .slider input[type=radio]:first-of-type:checked ~ .slider-img-1 {
@@ -309,14 +321,55 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.slider input[type=radio]:first-of-type:checked ~ .slider-img-1,
+.slider input[type=radio]:first-of-type:checked ~ .slider-img-2,
+.slider input[type=radio]:first-of-type:checked ~ .slider-img-3 {
+  animation: none;
+}
+
 .slider input[type=radio]:nth-of-type(2):checked ~ .slider-img-2 {
   display: block;
   opacity: 1;
 }
 
+.slider input[type=radio]:nth-of-type(2):checked ~ .slider-img-1,
+.slider input[type=radio]:nth-of-type(2):checked ~ .slider-img-2,
+.slider input[type=radio]:nth-of-type(2):checked ~ .slider-img-3 {
+  animation: none;
+}
+
 .slider input[type=radio]:last-of-type:checked ~ .slider-img-3 {
   display: block;
   opacity: 1;
+  animation: none;
+}
+
+.slider input[type=radio]:last-of-type:checked ~ .slider-img-1,
+.slider input[type=radio]:last-of-type:checked ~ .slider-img-2,
+.slider input[type=radio]:last-of-type:checked ~ .slider-img-3 {
+  animation: none;
+}
+
+@keyframes slider1 {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  35% {opacity: 1;}
+  40% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes slider2 {
+  35% {opacity: 0;}
+  40% {opacity: 1;}
+  65% {opacity: 1;}
+  70% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes slider3 {
+  65% {opacity: 0;}
+  70% {opacity: 1;}
+  100% {opacity: 1;}
 }
 
 .main {
