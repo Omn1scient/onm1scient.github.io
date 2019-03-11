@@ -38,7 +38,7 @@ body {
 }
 
 * {
-  outline: 1px solid red;
+  7outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -107,7 +107,6 @@ header .container-inner {
   position: relative;
   padding-bottom: 0px;
 }
-
 
 .header-logo {
   height: 64px;
@@ -350,7 +349,6 @@ header .container-inner {
   color: #323232;
 }
 
-
 .nav-user-item:first-child > a {
   width: 32px;
   height: 32px;
@@ -448,7 +446,6 @@ header .container-inner {
   margin-bottom: 0px;
   font-weight: bold;
 }
-
 
 main {
   margin-bottom: 0px;
@@ -562,7 +559,6 @@ main .container-inner {
 }
 
 .basic-button:active {
-  7color: #ffffff;
   background-image: linear-gradient(to top, #f26843, #ef6140, #ed5a3c, #ea5339, #e74b36);
   box-shadow: inset0 2px 2px 0px rgba(172, 16, 0, 0.7);
 }
@@ -764,11 +760,11 @@ label[class^="slider-"] {
 .hits-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  7overflow: auto;
+  overflow: auto;
 }
 
 .hits-item {
@@ -776,13 +772,12 @@ label[class^="slider-"] {
   padding: 10px;
   width: 280px;
   min-width: 200px;
-  7margin-right: 2.236%;
   border-radius: 5px;
 }
 
 .hits-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hits-item:last-child {
@@ -896,14 +891,6 @@ label[class^="slider-"] {
   width: 553px;
 }
 
-.about-us-item-column:first-child {
-  
-}
-
-.about-us-item-column:last-child {
-  
-}
-
 .about-us-item-column p {
   position: relative;
   margin: 0;
@@ -947,7 +934,6 @@ label[class^="slider-"] {
 .about-us-item-column:first-child p:last-child {
   margin-bottom: 0;
 }
-
 
 .about-us-item-column:last-child p:first-child {
   padding-left: 70px;
@@ -1063,7 +1049,6 @@ label[class^="slider-"] {
 
 .map {
   position: relative;
-  7margin-bottom: 36px;
 }
 
 .google-map {
@@ -1226,7 +1211,6 @@ label[class^="slider-"] {
 
 .copyright {
   width: 195px;
-  7margin-left: 40px;
 }
 
 .copyright img {
@@ -1241,8 +1225,6 @@ label[class^="slider-"] {
   line-height: 18px;
   margin-left: 2px;
 }
-
-
 
 .modal {
   display: none;
@@ -1308,7 +1290,7 @@ label[class^="slider-"] {
   line-height: 16px;
 }
 
-/* --------------------------------------------------------- */
+/* ---------------------------------------- */
 .modal-close {
   display: none;
   position: absolute;
@@ -1323,7 +1305,7 @@ label[class^="slider-"] {
   width: 10px;
   height: 10px;
 }
-/* --------------------------------------------------------- */
+/* ---------------------------------------- */
 
 .modal-feedback {
   position: fixed;
@@ -1338,18 +1320,6 @@ label[class^="slider-"] {
   border-radius: 10px;
   box-shadow: 0 15px 25px 2px rgba(0, 0, 0, 0.5);
 }
-
-/* .modal-feedback {
-  position: fixed;
-  top: 330px;
-  left: 37.5%;
-  width: 477px;
-  height: 440px;
-  padding: 10px 10px;
-  padding-left: 24px;
-  background-color: #f8f7f4;
-  border-radius: 10px;
-} */
 
 .modal-feedback h2 {
   color: #323232;
@@ -1434,9 +1404,6 @@ textarea::placeholder {
 .display-block {
   display: block;
 }
-
-
-
 
 /* -----------CATALOG-PAGE---------- */
 
@@ -1540,8 +1507,8 @@ select {
   display: block;
   width: 194px;
   height: 37px;
-  padding-top: 6px; /* - маскирует на IE11 галочку */
-  padding-bottom: 6px; /* - маскирует на IE11 галочку */
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin: 0px;
   border: none;
   outline: none;
@@ -1554,7 +1521,7 @@ select {
   background-color: rgba(169, 186, 176, 1.0);
   color: #ffffff;
   padding-left: 15px;
-  padding-right: 20px; /* - двигает галочку */
+  padding-right: 20px;
 }
 
 /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
@@ -1948,25 +1915,15 @@ input[type=range]::-moz-range-thumb {
   border-radius: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.portfolio {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../arrow-back-black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
