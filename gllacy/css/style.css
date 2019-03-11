@@ -38,7 +38,7 @@ body {
 }
 
 * {
-  7outline: 1px solid red;
+  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -765,7 +765,6 @@ label[class^="slider-"] {
   list-style: none;
   margin: 0;
   padding: 0;
-  7height: 500px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -775,7 +774,7 @@ label[class^="slider-"] {
 .hits-item {
   margin: 0;
   padding: 10px;
-  max-width: 280px;
+  width: 280px;
   min-width: 200px;
   7margin-right: 2.236%;
   border-radius: 5px;
@@ -784,7 +783,6 @@ label[class^="slider-"] {
 .hits-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.2);
-
 }
 
 .hits-item:last-child {
@@ -810,7 +808,7 @@ label[class^="slider-"] {
 .hit-price {
   position: absolute;
   bottom: 14px;
-  left: px;
+  left: 0px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -842,8 +840,7 @@ label[class^="slider-"] {
   display: block;
   position: relative;
   width: 100%;
-  min-width: 200px;
-  7margin: auto;
+  margin: auto;
 }
 
 .icecream-wrapper::after {
@@ -861,6 +858,7 @@ label[class^="slider-"] {
 .icecream-hit-details {
   display: block;
   width: 100%;
+  7min-width: 200px;
   min-height: 47px;
   margin: 0 auto;
   color: #ffffff;
@@ -1440,26 +1438,6 @@ textarea::placeholder {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -----------CATALOG-PAGE---------- */
 
 body.catalog-page {
@@ -1887,8 +1865,8 @@ input[type=range]::-moz-range-thumb {
   position: relative;
   margin: 0 auto;
   border: none;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 9px;
+  padding-right: 9px;
   outline: none;
   z-index: 1;
 }
@@ -1969,4 +1947,26 @@ input[type=range]::-moz-range-thumb {
   background-color: transparent;
   border-radius: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
