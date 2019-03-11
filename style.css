@@ -159,6 +159,11 @@ header {
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 
+.project-gllacy {
+  display: block;
+  width: 100%;
+}
+
 .project-keksby {
   display: block;
   width: 100%;
