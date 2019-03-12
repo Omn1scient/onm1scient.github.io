@@ -1,6 +1,7 @@
 html, 
 body {
-  min-width: 1600px;
+  width: 100%;
+  min-width: 1000px;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 * {
-  7outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 * {
@@ -26,7 +27,8 @@ ul, h, li, p, fieldset {
 }
 
 .container {
-  width: 1600px;
+  max-width: 1600px;
+  min-width: 1000px;
   margin: 0px auto;
   padding: 20px;
   outline-color: yellow;
@@ -56,7 +58,8 @@ header {
 
 .project-list {
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +198,7 @@ footer {
 /* -----------------MEDIA----------------- */
 
 @media screen and (max-width: 1440px) {
-  .main-header h1 {
+  7.main-header h1 {
     font-size: 80px;
     
   }
@@ -203,17 +206,17 @@ footer {
     width: 100%;
   }
 
-  .project-item {
+  7.project-item {
     margin: 40px;
     width: 700px;
     height: 1030px;
   }
 
-  .project-title-link {
+  7.project-title-link {
     font-size: 68px;
   }
 
-  .specs {
+  7.specs {
     font-size: 42px;
     left: 15px;
     bottom: 0;
@@ -230,6 +233,4 @@ footer {
       opacity: 1;
     }
   }
-
-
 }

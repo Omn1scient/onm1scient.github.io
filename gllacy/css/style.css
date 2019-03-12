@@ -1919,11 +1919,17 @@ input[type=range]::-moz-range-thumb {
   display: block;
   position: fixed;
   top: 100px;
-  left: 50px;
+  left: 20px;
   width: 80px;
   height: 80px;
   background-image: url('../../arrow-back-black.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+
+.catalog-page .portfolio {
+  top: auto;
+  left: 50px;
+  bottom: 20px;
 }
