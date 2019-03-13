@@ -91,16 +91,16 @@ header {
   overflow: hidden;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow, 0.2s, -webkit-transform;
-  transition: transform, box-shadow, 0.2s;
   transition: transform, box-shadow, 0.2s, -webkit-transform;
+  transition: transform, box-shadow, 0.2s;
 }
 
 .project-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   transition: box-shadow, 0.2s, -webkit-transform;
-  transition: transform, box-shadow, 0.2s;
   transition: transform, box-shadow, 0.2s, -webkit-transform;
+  transition: transform, box-shadow, 0.2s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
