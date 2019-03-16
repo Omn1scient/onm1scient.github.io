@@ -1,7 +1,6 @@
 body,
 html {
   min-width: 900px;
-  7width: 1200px;
   background-image: url('../img/lightning1.png');
   background-repeat: no-repeat;
   background-position: top center;
@@ -1632,13 +1631,6 @@ select {
   color: #ffffff;
   padding-left: 15px;
   padding-right: 20px;
-}
-
-/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    select {
-      7padding: 18px;
-    }
 }
 
 .sort label {

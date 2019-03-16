@@ -197,6 +197,11 @@ header {
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 
+.project-sedona {
+  display: block;
+  width: 100%;
+}
+
 .project-gllacy {
   display: block;
   width: 100%;
