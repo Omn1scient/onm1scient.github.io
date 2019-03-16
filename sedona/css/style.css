@@ -694,3 +694,16 @@ footer {
 .developer-logo:hover {
   fill: #81b3d2;
 }
+
+.portfolio {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../arrow-back-black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
