@@ -698,8 +698,8 @@ footer {
 .portfolio {
   display: block;
   position: fixed;
-  bottom: 50px;
-  left: 50px;
+  top: 70px;
+  left: 30px;
   width: 80px;
   height: 80px;
   background-image: url('../../arrow-back-black.png');
