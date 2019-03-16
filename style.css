@@ -95,6 +95,10 @@ header {
   transition: transform, box-shadow, 0.2s;
 }
 
+.project-item:last-child {
+  margin-right: 520px;
+}
+
 .project-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -210,6 +214,7 @@ header {
 .project-keksby {
   display: block;
   width: 100%;
+  margin-right: 200px;
 }
 
 .project-nerds {
