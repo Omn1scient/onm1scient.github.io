@@ -49,6 +49,7 @@ a {
   margin: 0 auto;
   padding: 0 0px;
   box-shadow: 0px 0px 20px 0px #000000;
+  z-index: 2;
 }
 
 .sedona-showcase {
@@ -706,4 +707,5 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  z-index: 1;
 }
