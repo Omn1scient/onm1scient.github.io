@@ -50,8 +50,11 @@ header {
   width: 100%;
   margin: 30px auto;
   font-size: 60px;
+  line-height: 65px;
   text-align: center;
-  color: #ffffff
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projects {
@@ -236,7 +239,7 @@ main {
 }
 
 footer {
-  min-height: 150px;
+  min-height: 100px;
   background-color: #333333;
 }
 
