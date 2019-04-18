@@ -1,2 +1,2 @@
-# omn1scient.github.io
+# omn1scient.github.io/gllacy/
 HTML pages portfolio
