@@ -98,9 +98,9 @@ header {
   transition: transform, box-shadow, 0.2s;
 }
 
-.project-item:last-child {
+/* .project-item:last-child {
   margin-right: 520px;
-}
+} */
 
 .project-item:hover {
   -webkit-transform: scale(1.1);
