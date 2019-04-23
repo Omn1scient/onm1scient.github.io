@@ -204,6 +204,11 @@ header {
 /* -----------PROJECTS------------- */
 /* -----------PROJECTS------------- */
 
+.project-barbershop-2 {
+  display: block;
+  width: 100%;
+}
+
 .project-sedona {
   display: block;
   width: 100%;
