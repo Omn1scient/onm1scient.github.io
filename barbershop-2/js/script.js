@@ -1,5 +1,3 @@
-document.createElement('main');
-
 //----------------Main-nav------------
 
 var navMain = document.querySelector(".main-nav");
@@ -16,7 +14,6 @@ navToggle.addEventListener('click', function() {
     navMain.classList.add("main-nav--closed");
   }
 });
-
 
 //----------------Modal-login------------
 
@@ -39,126 +36,104 @@ modalClose.addEventListener('click', function(evt) {
   overlay.classList.remove("overlay-shown");
 });
 
-
 //----------------Advantages------------
 
-var sliderToggleFirst = document.querySelector(".advantages__toggles .slider__toggle:first-child");
-var sliderToggleSecond = document.querySelector(".advantages__toggles .slider__toggle:nth-child(2n)");
-var sliderToggleThird = document.querySelector(".advantages__toggles .slider__toggle:last-child");
+var advantagesItems = document.querySelectorAll('.advantages__list .advantages__item');
+var advantagesToggles = document.querySelectorAll('.advantages__toggles .slider__toggle');
 
-var sliderItemFast = document.querySelector(".advantages__item--fast");
-var sliderItemCool = document.querySelector(".advantages__item--cool");
-var sliderItemExpensive = document.querySelector(".advantages__item--expensive");
+var addAdvantageHandler = function (advantagesToggle, advantagesItem) {
+  advantagesToggle.addEventListener('click', function () {
 
-sliderToggleFirst.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  if (sliderItemFast.classList.contains("slider__item--active")) {
-  } else {
-    sliderToggleFirst.classList.add("slider__toggle--active");
-    sliderToggleSecond.classList.remove("slider__toggle--active");
-    sliderToggleThird.classList.remove("slider__toggle--active");
+    for (var i = 0; i < advantagesToggles.length; i++) {
+      advantagesToggles[i].classList.remove('slider__toggle--active');
+      advantagesItems[i].classList.remove('slider__item--active');
+    }
 
-    sliderItemFast.classList.add("slider__item--active");
-    sliderItemExpensive.classList.remove("slider__item--active");
-    sliderItemCool.classList.remove("slider__item--active");
-  }
-});
+    advantagesToggle.classList.add('slider__toggle--active');
+    advantagesItem.classList.add('slider__item--active');
+  });
+};
 
-sliderToggleSecond.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  if (sliderItemCool.classList.contains("slider__item--active")) {
-  } else {
-    sliderToggleSecond.classList.add("slider__toggle--active");
-    sliderToggleFirst.classList.remove("slider__toggle--active");
-    sliderToggleThird.classList.remove("slider__toggle--active");
-
-    sliderItemCool.classList.add("slider__item--active");
-    sliderItemFast.classList.remove("slider__item--active");
-    sliderItemExpensive.classList.remove("slider__item--active");
-  }
-});
-
-sliderToggleThird.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  if (sliderItemExpensive.classList.contains("slider__item--active")) {
-  } else {
-    sliderToggleThird.classList.add("slider__toggle--active");
-    sliderToggleFirst.classList.remove("slider__toggle--active");
-    sliderToggleSecond.classList.remove("slider__toggle--active");
-
-    sliderItemExpensive.classList.add("slider__item--active");
-    sliderItemCool.classList.remove("slider__item--active");
-    sliderItemFast.classList.remove("slider__item--active");
-  }
-});
+for (var i = 0; i < advantagesToggles.length; i++) {
+  addAdvantageHandler(advantagesToggles[i], advantagesItems[i]);
+}
 
 //----------------News------------
 
-var newsToAll = document.querySelector(".news__to-all");
-var newsItemThird = document.querySelector(".news__item--third");
-var newsItemFourth = document.querySelector(".news__item--fourth");
+var newsToAllButton = document.querySelector(".news__to-all");
+var newsItems = document.querySelectorAll(".news .news__item");
 
-newsToAll.addEventListener('click', function(evt) {
+newsToAllButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  console.log('test');
-  if (newsItemThird.classList.contains("news__item--shown")) {
-    newsItemThird.classList.remove("news__item--shown");
-    newsItemFourth.classList.remove("news__item--shown");
-  } else {
-    newsItemThird.classList.add("news__item--shown");
-    newsItemFourth.classList.add("news__item--shown");
+  for (var i = 2; i < newsItems.length; i++) {
+    newsItems[i].classList.toggle('news__item--shown');
   }
 });
 
 //----------Reviews---------
 
-var reviewsItemFirst = document.querySelector(".reviews__list .reviews__item:first-of-type");
-var reviewsItemSecond = document.querySelector(".reviews__list .reviews__item:nth-of-type(2n)");
-var reviewsItemThird = document.querySelector(".reviews__list .reviews__item:last-of-type");
+var reviews = document.querySelector('.reviews');
 
-var RsliderToggleFirst = document.querySelector(".reviews__toggles .slider__toggle:first-child");
-var RsliderToggleSecond = document.querySelector(".reviews__toggles .slider__toggle:nth-child(2n)");
-var RsliderToggleThird = document.querySelector(".reviews__toggles .slider__toggle:last-child");
+var reviewsToggles = reviews.querySelectorAll('.slider__toggle');
+var reviewsItems = reviews.querySelectorAll('.reviews__item');
 
+var addReviewHandler = function (reviewsToggle, reviewsItem) {
+  reviewsToggle.addEventListener('click', function () {
 
-RsliderToggleFirst.addEventListener('click', function(evt) {
+    for (var i = 0; i < reviewsToggles.length; i++) {
+      reviewsToggles[i].classList.remove('slider__toggle--active');
+      reviewsItems[i].classList.remove('slider__item--active');
+    }
+
+    reviewsToggle.classList.add('slider__toggle--active');
+    reviewsItem.classList.add('slider__item--active');
+  });
+};
+
+for (var i = 0; i < reviewsToggles.length; i++) {
+  addReviewHandler(reviewsToggles[i], reviewsItems[i]);
+}
+
+//----------------Slider------------
+
+var buttonPreview = reviews.querySelector('.reviews__prev');
+
+var buttonNext = reviews.querySelector('.reviews__next');
+var reviewsItems = reviews.querySelectorAll('.reviews__item');
+
+var num = 0;
+
+buttonPreview.addEventListener('click', function(evt) {
   evt.preventDefault();
-  if (reviewsItemFirst.classList.contains("slider__item--active")) {
-  } else {
-    RsliderToggleFirst.classList.add("slider__toggle--active");
-    RsliderToggleSecond.classList.remove("slider__toggle--active");
-    RsliderToggleThird.classList.remove("slider__toggle--active");
+  num--;
 
-    reviewsItemFirst.classList.add("slider__item--active");
-    reviewsItemThird.classList.remove("slider__item--active");
-    reviewsItemSecond.classList.remove("slider__item--active");
+  if(num < 0) {
+    num = reviewsItems.length - 1;
   }
+
+  for (var i = 0; i < reviewsItems.length; i++) {
+    reviewsItems[i].classList.remove('slider__item--active');
+    reviewsToggles[i].classList.remove('slider__toggle--active');
+  }
+
+  reviewsItems[num].classList.add('slider__item--active');
+  reviewsToggles[num].classList.add('slider__toggle--active');
 });
 
-RsliderToggleSecond.addEventListener('click', function(evt) {
+
+buttonNext.addEventListener('click', function(evt) {
   evt.preventDefault();
-  if (reviewsItemSecond.classList.contains("slider__item--active")) {
-  } else {
-    RsliderToggleSecond.classList.add("slider__toggle--active");
-    RsliderToggleFirst.classList.remove("slider__toggle--active");
-    RsliderToggleThird.classList.remove("slider__toggle--active");
+  num++;
 
-    reviewsItemSecond.classList.add("slider__item--active");
-    reviewsItemFirst.classList.remove("slider__item--active");
-    reviewsItemThird.classList.remove("slider__item--active");
+  if (num >= reviewsItems.length) {
+    num = 0;
   }
-});
-
-RsliderToggleThird.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  if (reviewsItemThird.classList.contains("slider__item--active")) {
-  } else {
-    RsliderToggleThird.classList.add("slider__toggle--active");
-    RsliderToggleFirst.classList.remove("slider__toggle--active");
-    RsliderToggleSecond.classList.remove("slider__toggle--active");
-
-    reviewsItemThird.classList.add("slider__item--active");
-    reviewsItemSecond.classList.remove("slider__item--active");
-    reviewsItemFirst.classList.remove("slider__item--active");
+  
+  for (var i = 0; i < reviewsItems.length; i++) {
+    reviewsItems[i].classList.remove('slider__item--active');
+    reviewsToggles[i].classList.remove('slider__toggle--active');
   }
+
+  reviewsItems[num].classList.add('slider__item--active');
+  reviewsToggles[num].classList.add('slider__toggle--active');
 });
