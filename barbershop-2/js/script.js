@@ -94,7 +94,7 @@ for (var i = 0; i < reviewsToggles.length; i++) {
   addReviewHandler(reviewsToggles[i], reviewsItems[i]);
 }
 
-//----------------Slider------------
+//----------------Slider Arrows------------
 
 var buttonPreview = reviews.querySelector('.reviews__prev');
 
