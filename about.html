@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мое портфолио</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио Поповичева Антона - HTML-верстальщика">
+  <meta name="keywords" content="Поповичев Антон, портфолио, верстка">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/lib/picturefill.min.js"></script>
+  <link rel="icon" href="img/icon/portfolio-icon.png" type="image/x-icon">
+</head>
+<body class="inner-page">
+  <header>
+    <nav class="navbar navbar-dark">
+      <div class="container p-0">
+        <div class="navbar-header navbar-expand">
+          <ul class="navbar-nav">
+            <li class="nav-item my-portfolio">
+              <a href="index.html" class="nav-link">Моё Портфолио</a>
+            </li>
+            <li class="nav-item about-me">
+              <a href="about.html" class="nav-link active">Обо Мне</a>
+            </li>
+          </ul>
+          <p class="who-am-i">
+            <span class="my-name">Поповичев Антон | HTML-верстальщик</span>
+            <span class="my-phone">+7-(953)-475-69-00</span>
+          </p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="about">
+      <div class="container-fluid p-0">
+        <h2 class="about-title visually-hidden">Обо мне</h2>
+        <div class="container about-container substrate p-3">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-5">
+            <div class="about-photo">
+              <picture>
+                <source srcset="img/profile/me-mobile.jpg" media="(max-width: 575px)">
+                <source srcset="img/profile/me-tablet.jpg" media="(max-width: 767px)">
+                <img class="about-image" width="360" src="img/profile/me-desktop.jpg" alt="its me">
+              </picture>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-6 col-md-6 col-sm-7">
+            <div class="about-my-profile">
+              <h3 class="about-my-name">Поповичев Антон</h3>
+              <span class="about-my-profession">HTML-верстальщик</span>
+              <h5 class="about-specialization-title">Основная специализация:</h5>
+              <p class="about-specialization">
+                Верстка html-страниц, Landing Page или крупных проектов. Фиксированная, адаптивная, резиновая верстка
+              </p>
+              <h5 class="about-skills-title">Ключевые навыки:</h5>
+              <ul class="about-skills-list">
+                <li class="skills-list-item">
+                  HTML5, CSS3
+                </li>
+                <li class="skills-list-item">
+                  Bootstrap 4 / Grid / Flexbox 
+                </li>
+                <li class="skills-list-item">
+                  Препроцессоры Less / Sass. Больше нравится Sass
+                </li>
+                <li class="skills-list-item">
+                  Кроссбраузерная, валидная, фиксированная / адаптивная / резиновая верстка
+                </li>
+                <li class="skills-list-item">
+                  В качестве сборщика и автоматизации использую Gulp.js 
+                </li>
+                <li class="skills-list-item">
+                  Названия классам даю по методологии БЭМ
+                </li>
+                <li class="skills-list-item">
+                  Верстка макетов из Аdobe Photoshop, ﻿Figma, Zeplin, Avocode 
+                </li>
+                <li class="skills-list-item">
+                  SVG, ретинизация
+                </li>
+                <li class="skills-list-item">
+                  Минификация кода, сжатие изображений
+                </li>
+                <li class="skills-list-item">
+                  Начальные знания JavaScrips / jQuery на уровне подключения плагинов
+                </li>
+              </ul>
+              <div class="about-personal-skills-wrapper">
+                <h5 class="about-personal-title">Личные качества:</h5>
+                <p class="about-personal-skills">
+                  Аналитический склад ума, устремлен к развитию во всем, быстро учусь, внимателен к деталям, ответственнен, понимаю принципы юзабилити.
+                </p>
+              </div>
+              <div class="about-contacts-wrapper">
+                <h5 class="about-contacts-title">Контакты:</h5>
+                <ul class="about-social">
+                  <li class="social-item vkontakte">
+                    <a href="https://vk.com/omn1scient" target="_blank">
+                      <img class="social-item-icon" src="img/icon/vk.png" width="50" height="50" alt="vk.com/omn1scient">
+                      <span class="visually-hidden">Вконтакте</span>
+                      <span class="about-cloud">vk.com/omn1scient</span>
+                    </a>
+                  </li>
+                  <li class="social-item skype">
+                    <a href="skype:vermilionpt333?chat">
+                      <img class="social-item-icon" src="img/icon/skype.png" width="50" height="50" alt="VermilionPt333">
+                      <span class="visually-hidden">Skype</span>
+                      <span class="about-cloud">VermilionPt333</span>
+                    </a>
+                  </li>
+                  <li class="social-item mail">
+                    <a href="mailto:vermilionpt3@yandex.ru">
+                      <img class="social-item-icon" src="img/icon/mail.png" width="50" height="50" alt="VermilionPt3@yandex.ru">
+                      <span class="visually-hidden">E-mail</span>
+                      <span class="about-cloud">VermilionPt3@yandex.ru</span>
+                    </a>
+                  </li>
+                  <li class="social-item phone">
+                    <a href="tel:+79534756900">
+                      <img class="social-item-icon" src="img/icon/phone.png" width="50" height="50" alt="+7-(953)-475-69-00">
+                      <span class="visually-hidden">Phone</span>
+                      <span class="about-cloud">+7-(953)-475-69-00</span>
+                    </a>
+                  </li>
+                  <li class="social-item fl-ru">
+                    <a href="https://www.fl.ru/users/omn1scient/" target="_blank">
+                      <img class="social-item-icon" src="img/icon/fl.png" width="50" height="50" alt="fl.ru/users/omn1scient">
+                      <span class="visually-hidden">Fl.ru</span>
+                      <span class="about-cloud">fl.ru/users/omn1scient</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="navbar navbar-dark m-0">
+      <div class="container p-0 d-flex justify-content-center">
+        <div class="navbar-footer">
+          <p class="mail-me">
+            <a href="mailto:vermilionpt3@yandex.ru" class="my-mail"> E-mail: VermilionPt3@yandex.ru</a>
+          </p>
+          <p class="call-me">
+            <a href="tel:+79534756900" class="my-phone">Phone: +7-(953)-475-69-00</a>
+          </p>
+          <p class="call-me-skype">
+            <a href="skype:vermilionpt333?chat">Skype: VermilionPt333</a>
+          </p>
+        </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

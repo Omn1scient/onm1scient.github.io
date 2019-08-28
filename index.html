@@ -1,47 +1,47 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Портфолио</title>
-
-<!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-     ym(53501929, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:true
-     });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/53501929" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
+  <meta charset="UTF-8">
+  <title>Мое портфолио</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио Поповичева Антона - HTML-верстальщика">
+  <meta name="keywords" content="Поповичев Антон, портфолио, верстка">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/icon/portfolio-icon.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="main-header">
-        <h1>Портфолио</h1>
+    <nav class="navbar navbar-dark">
+      <div class="container p-0">
+        <div class="navbar-header navbar-expand">
+          <ul class="navbar-nav">
+            <li class="nav-item my-portfolio active">
+              <a href="index.html" class="nav-link">Моё Портфолио</a>
+            </li>
+            <li class="nav-item about-me">
+              <a href="about.html" class="nav-link">Обо Мне</a>
+            </li>
+          </ul>
+          <p class="who-am-i">
+            <span class="my-name">Поповичев Антон | HTML-верстальщик</span>
+            <span class="my-phone">+7-(953)-475-69-00</span>
+          </p>
+        </div>
       </div>
-    </div> 
+    </nav>
   </header>
   <main>
-    <div class="container">
-        <div class="projects">
-          <ul class="project-list">
-<!-- -----------------PINK 2.0---------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="pink/index.html">
-                <img class="project-sedona" src="pink/preview/preview.jpg" alt="">
-                <a class="project-title-link" href="pink/index.html" title="pink">pink</a>
+    <div class="container-fluid py-3">
+      <div class="container">
+        <div class="row substrate">
+          <!-- PINK -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/pink/">
+                <img class="project-preview" src="projects/pink/preview/preview.jpg" alt="">
+                <a class="project-title-link" href="projects/pink/" title="pink">pink</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -67,12 +67,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------BARBERSHOP 2.0---------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="barbershop-2/index.html">
-                <img class="project-sedona" src="barbershop-2/preview/preview.jpg" alt="">
-                <a class="project-title-link" href="barbershop-2/index.html" title="barbershop-2">barbershop 2.0</a>
+            </div>
+          </div>
+          <!-- BARBERSHOP-2.0 -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/barbershop-2/">
+                <img class="project-preview" src="projects/barbershop-2/preview/preview.jpg" alt="">
+                <a class="project-title-link" href="projects/barbershop-2/" title="barbershop-2">barbershop 2.0</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -98,12 +100,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------SEDONA---------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="sedona/index.html">
-                <img class="project-sedona" src="sedona/preview/index.jpg" alt="">
-                <a class="project-title-link" href="sedona/" title="sedona">sedona</a>
+            </div>
+          </div>
+          <!-- SEDONA -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/sedona/">
+                <img class="project-preview" src="projects/sedona/preview/index.jpg" alt="">
+                <a class="project-title-link" href="projects/sedona/" title="sedona">sedona</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -125,12 +129,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------GLLACY---------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="gllacy/index.html">
-                <img class="project-gllacy" src="gllacy/preview/index.jpg" alt="">
-                <a class="project-title-link" href="gllacy/" title="gllacy">gllacy</a>
+            </div>
+          </div>
+          <!-- GLAACY -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/gllacy/">
+                <img class="project-preview" src="projects/gllacy/preview/index.jpg" alt="">
+                <a class="project-title-link" href="projects/gllacy/" title="gllacy">gllacy</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -152,12 +158,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------NERDS----------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="nerds/index.html">
-                <img class="project-nerds" src="nerds/preview/index.jpg" alt="">
-                <a class="project-title-link" href="nerds/" title="nerds">nerds</a>
+            </div>
+          </div>
+          <!-- NERDS -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/nerds/">
+                <img class="project-preview" src="projects/nerds/preview/index.jpg" alt="">
+                <a class="project-title-link" href="projects/nerds/" title="nerds">nerds</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -180,12 +188,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------BARBERSHOP------------ -->
-            <li class="project-item">
-              <a class="project-item-link" href="barbershop/index.html">
-                <img class="project-barbershop" src="barbershop/preview/index.jpg" alt="">
-                <a class="project-title-link" href="barbershop/" title="barbershop">barbershop</a>
+            </div>
+          </div>
+          <!-- BARBERSHOP -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/barbershop/">
+                <img class="project-preview" src="projects/barbershop/preview/index.jpg" alt="">
+                <a class="project-title-link" href="projects/barbershop/" title="barbershop">barbershop</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -207,12 +217,14 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- -----------------KEKSBY---------------- -->
-            <li class="project-item">
-              <a class="project-item-link" href="keksby/index.html">
-                <img class="project-keksby" src="keksby/preview/index.jpg" alt="">
-                <a class="project-title-link" href="keksby/" title="keksby">keksby</a>
+            </div>
+          </div>
+          <!-- KEKSBY -->
+          <div class="col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center p-0">
+            <div class="project-item">
+              <a class="project-item-link" href="projects/keksby/">
+                <img class="project-preview" src="projects/keksby/preview/index.jpg" alt="">
+                <a class="project-title-link" href="projects/keksby/" title="keksby">keksby</a>
                 <table class="specs">
                   <tbody>
                     <tr>
@@ -234,18 +246,31 @@
                   </tbody>
                 </table>
               </a>
-            </li>
-<!-- --------------------------------------- -->
-          </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </main>
   <footer>
-    <div class="container">
-      <div class="main-footer">
-        <h1></h1>
-      </div>
+    <div class="navbar navbar-dark m-0">
+      <div class="container p-0 d-flex justify-content-center">
+        <div class="navbar-footer">
+          <p class="mail-me">
+            <a href="mailto:vermilionpt3@yandex.ru" class="my-mail"> E-mail: VermilionPt3@yandex.ru</a>
+          </p>
+          <p class="call-me">
+            <a href="tel:+79534756900" class="my-phone">Phone: +7-(953)-475-69-00</a>
+          </p>
+          <p class="call-me-skype">
+            <a href="skype:vermilionpt333?chat">Skype: VermilionPt333</a>
+          </p>
+        </div>
+        </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
