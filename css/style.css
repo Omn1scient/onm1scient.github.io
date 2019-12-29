@@ -223,7 +223,8 @@ input[type=radio].visually-hidden {
 
 .about {
   font-size: 16px;
-  color: #343a40
+  color: #343a40;
+  overflow: hidden
 }
 
 .about-container {
