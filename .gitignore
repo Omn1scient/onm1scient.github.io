@@ -1,1 +1,10 @@
-barbershop-2/node_modules/
+.git/
+.idea/
+
+node_modules/
+
+gulpfile (build).js
+gulpfile (public).js
+gulpfile.js
+package.json
+package-lock.json
