@@ -47,21 +47,80 @@ input[type=radio].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   -ms-flex-align: center;
   align-items: center;
   min-width: 300px
 }
 
-.nav-item {
-  font-weight: 200;
-  transition: all .2s
+@media (min-width: 576px) {
+  .navbar-nav {
+    justify-content: space-between;
+  }
 }
 
-.nav-item:hover {
-  font-size: 24px;
-  transition: all .2s;
-  font-weight: 300
+.nav-item  a {
+  color: #797878;
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
+  transition: 0.3s ease-out 0.1s;
+}
+.nav-item a span::before {
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.75);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: 0.3s ease-out 0.1s;
+}
+.nav-item a span::after {
+  height: 100%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.75);
+
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transition: 0.3s ease-out 0.1s;
+}
+.nav-item a::before {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transition: 0.3s ease-out 0.1s;
+}
+.nav-item a::after {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.3s ease-out 0.1s;
+}
+.nav-item a:hover {
+  color: white;
+}
+.nav-item a:hover::before,
+.nav-item a:hover::after {
+  transform: scaleX(1);
+}
+.nav-item a:hover span::before,
+.nav-item a:hover span::after {
+  transform: scaleY(1);
 }
 
 .who-am-i {
@@ -109,17 +168,46 @@ input[type=radio].visually-hidden {
   text-align: center
 }
 
-.navbar-footer p:hover a {
-  font-size: 26px;
-  font-weight: 400
+.navbar-footer p a {
+  font-size: 18px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 576px) {
+  .navbar-footer p a {
+    font-size: 24px;
+    margin: 0 20px;
+  }
 }
 
 .navbar-footer p a {
-  font-size: 24px;
+  padding: 10px 0 !important;
+  color: #797878 !important;
+  text-shadow: none;
+  position: relative;
+}
+
+.navbar-footer p a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 0;
+  border-bottom: 2px solid #fff;
   color: #fff;
-  text-decoration: none;
-  transition: font-size .2s;
-  font-weight: 300
+  content: attr(data-hover);
+  -webkit-transition: max-width 0.5s;
+  -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  white-space: nowrap;
+}
+
+.navbar-footer p a:hover::before {
+  max-width: 100%;
 }
 
 .substrate {
@@ -238,8 +326,14 @@ input[type=radio].visually-hidden {
 }
 
 .about-image {
-  border-radius: 10px;
-  width: 100%
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.about-photo {
+  margin-bottom: 30px
 }
 
 .about-my-profile {
@@ -252,6 +346,32 @@ input[type=radio].visually-hidden {
 
 .about-my-profession {
   color: rgba(33, 37, 41, .5)
+}
+
+.about-skills-list {
+  padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .about-skills-list {
+    padding-left: 25px;
+  }
+}
+
+.skills-list-item {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .skills-list-item {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-list-item {
+    line-height: 26px;
+  }
 }
 
 .about-my-profession,
@@ -295,12 +415,37 @@ input[type=radio].visually-hidden {
   animation: opacity-cloud-in 2.5s forwards
 }
 
+.social-item-link:hover .social-item-wrapper::before {
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  background-color: rgb(152, 216, 225);
+  transition: all .2s
+}
+
+.social-item-wrapper {
+  position: relative;
+}
+
+.social-item-wrapper::before {
+  position: absolute;
+  content: '';
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  transition: all .2s
+}
+
 .social-item-icon {
   transform: scale(.7);
   transition: all .2s
 }
 
-.social-item-icon:hover {
+.social-item-link:hover .social-item-icon {
   transform: scale(1);
   transition: all .2s
 }
@@ -318,6 +463,7 @@ input[type=radio].visually-hidden {
   border-radius: 10px;
   text-align: center;
   opacity: 0;
+  pointer-events: none;
   z-index: 2
 }
 
@@ -353,6 +499,7 @@ input[type=radio].visually-hidden {
   }
   100% {
     transform: translateY(-60px);
+    pointer-events: auto;
     opacity: 1
   }
 }
@@ -363,6 +510,7 @@ input[type=radio].visually-hidden {
   }
   100% {
     transform: translateY(-60px);
+    pointer-events: auto;
     opacity: 1
   }
 }
@@ -373,6 +521,7 @@ input[type=radio].visually-hidden {
   }
   100% {
     transform: translateY(-48px);
+    pointer-events: auto;
     opacity: 1
   }
 }
@@ -383,6 +532,7 @@ input[type=radio].visually-hidden {
   }
   100% {
     transform: translateY(-48px);
+    pointer-events: auto;
     opacity: 1
   }
 }
@@ -395,7 +545,8 @@ input[type=radio].visually-hidden {
     opacity: 0
   }
   100% {
-    opacity: 1
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -407,7 +558,8 @@ input[type=radio].visually-hidden {
     opacity: 0
   }
   100% {
-    opacity: 1
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -432,6 +584,19 @@ input[type=radio].visually-hidden {
   }
   100% {
     opacity: 0
+  }
+}
+
+@media (min-width: 576px) {
+  .nav-item a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-image {
+    width: 100%
+    max-width: 100%
   }
 }
 
@@ -476,14 +641,14 @@ input[type=radio].visually-hidden {
     position: relative
   }
   .about-container {
-    height: 860px
+    min-height: 860px
   }
   .about-my-profile {
     padding-left: 0
   }
   .about-contacts-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: -125px
   }
   .about-contacts-title {
@@ -515,7 +680,7 @@ input[type=radio].visually-hidden {
     font-size: 14px
   }
   .about-container {
-    height: 660px
+    min-height: 660px
   }
   .about-my-name {
     font-size: 22px
@@ -538,12 +703,12 @@ input[type=radio].visually-hidden {
   .about-contacts-wrapper {
     max-width: 175px;
     left: -190px;
-    bottom: 30px
+    bottom: 81px;
   }
   .about-personal-skills-wrapper {
     max-width: 175px;
-    bottom: 140px;
-    left: -190px
+    bottom: 210px;
+    left: -190px;
   }
 }
 
@@ -552,11 +717,9 @@ input[type=radio].visually-hidden {
     font-size: 18px
   }
   .about-container {
-    height: 100%
+    min-height: 100%
   }
-  .about-photo {
-    margin-bottom: 30px
-  }
+
   .about-my-profession,
   .about-personal-skills,
   .about-skills-list,
