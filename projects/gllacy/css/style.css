@@ -389,8 +389,8 @@ header .container-inner {
 .nav-user-item:first-child > a::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 22px;
   top: 5px;
   left: 5px;
   background-image: url('../svg/loupe.svg');
